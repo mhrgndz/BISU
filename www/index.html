@@ -1,0 +1,348 @@
+
+<!DOCTYPE html>
+<html class="no-js css-menubar" lang="en" ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="bootstrap admin template">
+    <meta name="author" content="">
+    
+    <title>BISU</title>
+    
+    <link rel="apple-touch-icon" href="./template/img/114x114.png">
+    <link rel="shortcut icon" href="./template/img/114x114.png">
+    
+    <!-- Stylesheets -->
+
+    <link rel="stylesheet" href="./template/global/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./template/global/css/bootstrap-extend.min.css">
+    <link rel="stylesheet" href="./template/topicon/assets/css/site.min.css">
+    
+    <!-- Plugins -->
+    <link rel="stylesheet" href="./template/global/vendor/animsition/animsition.css">
+    <link rel="stylesheet" href="./template/global/vendor/asscrollable/asScrollable.css">
+    <link rel="stylesheet" href="./template/global/vendor/switchery/switchery.css">
+    <link rel="stylesheet" href="./template/global/vendor/intro-js/introjs.css">
+    <link rel="stylesheet" href="./template/global/vendor/slidepanel/slidePanel.css">
+    <link rel="stylesheet" href="./template/global/vendor/flag-icon-css/flag-icon.css">
+    <link rel="stylesheet" href="./template/global/vendor/chartist/chartist.css">
+    <link rel="stylesheet" href="./template/global/vendor/chartist-plugin-tooltip/chartist-plugin-tooltip.css">
+    <link rel="stylesheet" href="./template/global/vendor/aspieprogress/asPieProgress.css">
+    <link rel="stylesheet" href="./template/global/vendor/jquery-selective/jquery-selective.css">
+    <link rel="stylesheet" href="./template/global/vendor/bootstrap-datepicker/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="./template/global/vendor/asscrollable/asScrollable.css">
+    <link rel="stylesheet" href="./template/topicon/assets/examples/css/dashboard/team.css">
+
+    
+    <!-- Fonts -->
+    <link rel="stylesheet" href="./template/global/fonts/web-icons/web-icons.min.css">
+    <link rel="stylesheet" href="./template/global/fonts/brand-icons/brand-icons.min.css">
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
+    
+    <!--[if lt IE 9]>
+    <script src="./template/global/vendor/html5shiv/html5shiv.min.js"></script>
+    <![endif]-->
+    
+    <!--[if lt IE 10]>
+    <script src="./template/global/vendor/media-match/media.match.min.js"></script>
+    <script src="./template/global/vendor/respond/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Scripts -->
+    <script src="./template/global/vendor/breakpoints/breakpoints.js"></script>
+    <script>
+      Breakpoints();
+    </script>
+  </head>
+  <body class="animsition site-navbar-small dashboard" ng-controller="index" ng-init="Init()">
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <nav class="site-navbar navbar navbar-default navbar-fixed-top navbar-mega navbar-inverse" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggler hamburger hamburger-close navbar-toggler-left hided"
+          data-toggle="menubar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="hamburger-bar"></span>
+        </button>
+        <button type="button" class="navbar-toggler collapsed" data-target="#site-navbar-collapse"
+          data-toggle="collapse">
+          <i class="icon wb-more-horizontal" aria-hidden="true"></i>
+        </button>
+        <a class="navbar-brand navbar-brand-center" href="index.html">
+          <img class="navbar-brand-logo navbar-brand-logo-normal" src="./template/img/144x144.png"
+            title="Remark">
+          <img class="navbar-brand-logo navbar-brand-logo-special" src="./template/img/144x144.png"
+            title="Remark">
+          <span class="navbar-brand-text hidden-xs-down"> BİSU</span>
+        </a>
+        <button type="button" class="navbar-toggler collapsed" data-target="#site-navbar-search"
+          data-toggle="collapse">
+          <span class="sr-only">Toggle Search</span>
+          <i class="icon wb-search" aria-hidden="true"></i>
+        </button>
+      </div>
+    
+      <div class="navbar-container container-fluid">
+        <!-- Navbar Collapse -->
+        <div class="collapse navbar-collapse navbar-collapse-toolbar" id="site-navbar-collapse">
+          <!-- Navbar Toolbar -->
+          <ul class="nav navbar-toolbar">
+            <li class="nav-item hidden-float" id="toggleMenubar">
+              <a class="nav-link" data-toggle="menubar" href="javascript:void(0)" role="button">
+                <i class="icon hamburger hamburger-arrow-left">
+                  <span class="sr-only">Toggle menubar</span>
+                  <span class="hamburger-bar"></span>
+                </i>
+              </a>
+            </li>
+            <li class="nav-item hidden-sm-down" id="toggleFullscreen">
+              <a class="nav-link icon icon-fullscreen" data-toggle="fullscreen" href="javascript:void(0)" role="button">
+                <span class="sr-only">Toggle fullscreen</span>
+              </a>
+            </li>
+          </ul>
+          <!-- End Navbar Toolbar -->
+    
+          <!-- Navbar Toolbar Right -->
+          <ul class="nav navbar-toolbar navbar-right navbar-toolbar-right">
+            <li class="nav-item dropdown">
+              <a class="nav-link" data-toggle="dropdown" href="javascript:void(0)" data-animation="scale-up"
+                aria-expanded="false" role="button">
+                <span class="flag-icon flag-icon-tr"></span>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link navbar-avatar" data-toggle="dropdown" href="javascript:void(0)" aria-expanded="false"
+                data-animation="scale-up" role="button">
+                <span class="avatar avatar-online">
+                  <img src="./template/img/usericon.png" alt="...">
+                  <i></i>
+                </span>
+              </a>
+              <div class="dropdown-menu" role="menu">
+                <a class="dropdown-item" href="#!account" role="menuitem"><i class="icon wb-user" aria-hidden="true"></i> Profil</a>
+                <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-power" aria-hidden="true"></i> Çıkış</a>
+              </div>
+            </li>
+          </ul>
+          <!-- End Navbar Toolbar Right -->
+        </div>
+      </div>
+    </nav>    
+    <div class="site-menubar site-menubar-light">
+      <div class="site-menubar-body">
+        <div>
+            <div>
+                <ul class="site-menu" data-plugin="menu">
+                    <li class="site-menu-item has-sub">
+                        <a href="#!" data-dropdown-toggle="false">
+                        <i class="site-menu-icon wb-layout" aria-hidden="true"></i>
+                        <span class="site-menu-title">Ana Sayfa</span>
+                        </a>
+                    </li>
+                    <li class="site-menu-item has-sub">
+                      <a href="#!product" data-dropdown-toggle="false">
+                      <i class="site-menu-icon wb-plugin" aria-hidden="true"></i>
+                      <span class="site-menu-title">Ürünler</span>
+                      </a>
+                    </li>
+                    <li class="site-menu-item has-sub">
+                        <a href="#!orders" data-dropdown-toggle="false">
+                        <i class="site-menu-icon wb-extension" aria-hidden="true"></i>
+                        <span class="site-menu-title">Önceki Siparişler</span>
+                        </a>
+                    </li>
+                </ul>      
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Page -->
+    <div class="page">
+      <div class="page-content container-fluid p-2">
+        <div ng-view></div>
+      </div>
+    </div>
+    <!-- End Page -->
+
+    <!-- Add Item Dialog -->
+    <div id="addtodoItemForm" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="addtodoItemForm"
+      aria-hidden="true">
+      <div class="modal-dialog modal-simple">
+        <form class="modal-content form-horizontal" role="form" action="#" method="post">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h4 class="moadl-title">Create New To Do Item</h4>
+          </div>
+          <div class="modal-body">
+            <div class="form-group row">
+              <label class="col-sm-2 form-control-label" for="title">Title:</label>
+              <div class="col-sm-10">
+                <input id="title" class="form-control" type="text" name="title" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-2 form-control-label" for="dueDate">Due Date</label>
+              <div class="col-sm-10">
+                <div class="input-group">
+                  <input id="dueDate" class="form-control" type="text" data-plugin="datepicker" data-container="#addtodoItemForm"
+                  />
+                  <span class="input-group-append">
+                    <i class="icon wb-calendar" aria-hidden="true"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-2 form-control-label" for="people">People:</label>
+              <div class="col-sm-10">
+                <select id="people" multiple="multiple" class="plugin-selective">
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="form-actions">
+              <button class="btn btn-primary" data-dismiss="modal" type="button">
+                Add This Item
+              </button>
+              <a class="btn btn-sm btn-white" data-dismiss="modal" href="javascript:void(0)">
+            Cancel
+          </a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- End Add Item Dialog -->
+
+    <!-- Edit Dialog -->
+    <div class="modal fade" id="edittodoItemForm" aria-hidden="true" aria-labelledby="edittodoItemForm"
+      role="dialog" tabindex="-1" data-show="false">
+      <div class="modal-dialog modal-simple">
+        <form class="modal-content form-horizontal" action="#" method="post" role="form">
+          <div class="modal-header">
+            <button type="button" class="close" aria-hidden="true" data-dismiss="modal">×</button>
+            <h4 class="modal-title">Edit To Do Item</h4>
+          </div>
+          <div class="modal-body">
+            <div class="form-group row">
+              <label class="col-sm-2 form-control-label" for="editTitle">Title:
+              </label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="editTitle" name="editTitle">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-2 form-control-label" for="editStarts">Due Date:
+              </label>
+              <div class="col-sm-10">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="editDueDate" name="editDueDate" data-container="#edittodoItemForm"
+                    data-plugin="datepicker">
+                  <span class="input-group-append">
+                    <i class="icon wb-calendar" aria-hidden="true"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-2 form-control-label" for="editPeople">People:
+              </label>
+              <div class="col-sm-10">
+                <select id="editPeople" multiple="multiple" class="plugin-selective"></select>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="form-actions">
+              <button class="btn btn-primary" data-dismiss="modal" type="button">Save</button>
+              <button class="btn btn-danger" data-dismiss="modal" type="button">Delete</button>
+              <a class="btn btn-sm btn-white" data-dismiss="modal" href="javascript:void(0)">Cancel</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- End Edit Dialog -->
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="site-footer-legal">© 2021 <a href="https://bisu.com.tr/">BISU</a></div>
+      <!-- <div class="site-footer-right">
+        Crafted with <i class="red-600 wb wb-heart"></i> by <a href="https://themeforest.net/user/creation-studio">Creation Studio</a>
+      </div> -->
+    </footer>
+    <!-- Core  -->
+    <script src="./template/global/vendor/babel-external-helpers/babel-external-helpers.js"></script>
+    <script src="./template/global/vendor/jquery/jquery.js"></script>
+    <script src="./template/global/vendor/popper-js/umd/popper.min.js"></script>
+    <script src="./template/global/vendor/bootstrap/bootstrap.js"></script>
+    <script src="./template/global/vendor/animsition/animsition.js"></script>
+    <script src="./template/global/vendor/mousewheel/jquery.mousewheel.js"></script>
+    <script src="./template/global/vendor/asscrollbar/jquery-asScrollbar.js"></script>
+    <script src="./template/global/vendor/asscrollable/jquery-asScrollable.js"></script>
+    
+    <!-- Plugins -->
+    <script src="./template/global/vendor/switchery/switchery.js"></script>
+    <script src="./template/global/vendor/intro-js/intro.js"></script>
+    <script src="./template/global/vendor/screenfull/screenfull.js"></script>
+    <script src="./template/global/vendor/slidepanel/jquery-slidePanel.js"></script>
+    <script src="./template/global/vendor/chartist/chartist.js"></script>
+    <script src="./template/global/vendor/chartist-plugin-tooltip/chartist-plugin-tooltip.js"></script>
+    <script src="./template/global/vendor/aspieprogress/jquery-asPieProgress.js"></script>
+    <script src="./template/global/vendor/matchheight/jquery.matchHeight-min.js"></script>
+    <script src="./template/global/vendor/jquery-selective/jquery-selective.min.js"></script>
+    <script src="./template/global/vendor/bootstrap-datepicker/bootstrap-datepicker.js"></script>
+    
+    <!-- Scripts -->
+    <script src="./template/global/js/Component.js"></script>
+    <script src="./template/global/js/Plugin.js"></script>
+    <script src="./template/global/js/Base.js"></script>
+    <script src="./template/global/js/Config.js"></script>
+    
+    <script src="./template/topicon/assets/js/Section/Menubar.js"></script>
+    <script src="./template/topicon/assets/js/Section/Sidebar.js"></script>
+    <script src="./template/topicon/assets/js/Section/PageAside.js"></script>
+    <script src="./template/topicon/assets/js/Plugin/menu.js"></script>
+    
+    <!-- Config -->
+    <script src="./template/global/js/config/colors.js"></script>
+    <script src="./template/topicon/assets/js/config/tour.js"></script>
+    <script>Config.set('assets', '../assets');</script>
+    
+    <!-- Page -->
+    <script src="./template/topicon/assets/js/Site.js"></script>
+    <script src="./template/global/js/Plugin/asscrollable.js"></script>
+    <script src="./template/global/js/Plugin/slidepanel.js"></script>
+    <script src="./template/global/js/Plugin/switchery.js"></script>
+    <script src="./template/global/js/Plugin/matchheight.js"></script>
+    <script src="./template/global/js/Plugin/aspieprogress.js"></script>
+    <script src="./template/global/js/Plugin/bootstrap-datepicker.js"></script>
+    <script src="./template/global/js/Plugin/asscrollable.js"></script>
+
+    <script src="./template/topicon/assets/examples/js/dashboard/team.js"></script>
+
+    <!-- BISU -->
+    
+    <script src="ctrl/index.js"></script>
+    <script src="ctrl/orders.js"></script>
+    <script src="ctrl/account.js"></script>
+    <script src="ctrl/product.js"></script>
+
+    <script src="js/socket.io.js"></script>
+    <script src="js/angular.js"></script>
+    <script src="js/angular-route.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/moment-with-locales.min.js"></script>
+    <script src="lib/angular-service.js"></script>
+    <script src="lib/App.js"></script>
+    <script src="lib/Controller.js"></script>
+    
+  </body>
+</html>

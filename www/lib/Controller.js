@@ -1,0 +1,5 @@
+angular.module('app.controller', [])
+.controller('index',['$scope','$window','srv',index])
+.controller('account',['$scope','$window','srv',account])
+.controller('orders',['$scope','$window','srv',orders])
+.controller('product',['$scope','$window','srv',product])

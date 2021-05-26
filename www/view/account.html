@@ -1,0 +1,15 @@
+<div class="col-12" ng-controller = "account" ng-init = "Init()">
+    <div class="user-info card card-shadow text-center">
+      <div class="user-base card-block">
+        <a class="avatar img-bordered avatar-100" href="javascript:void(0)">
+          <img src="../template/img/usericon.png" alt="...">
+        </a>
+        <h4 class="user-name">{{CustomerList[0].fullname}}</h4>
+        <p class="user-job">Telefon : {{CustomerList[0].phoneNumber}}</p>
+        <p class="user-location">Adres : {{CustomerList[0].address}}</p>
+        <p class="user-location">İlçe : {{CustomerList[0].subCityName}}</p>
+        <p class="user-location">Marka : {{CustomerList[0].brand}}</p>
+        <p class="user-location">Distributor : {{CustomerList[0].distributorNumber}}</p>
+      </div>
+    </div>
+  </div>

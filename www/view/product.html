@@ -1,0 +1,38 @@
+<div ng-controller = "product" ng-init = "Init()">
+    <div class="page">
+        <div class="page-header">
+          <h1 class="page-title">Ürünler</h1>
+          <div class="page-header-actions">
+            <form>
+              <div class="input-search">
+                <i class="input-search-icon wb-search" aria-hidden="true"></i>
+                <input type="text" class="form-control" name="" placeholder="Arama...">
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="page-content">
+          <div class="projects-wrap">
+            <ul class="blocks blocks-200 blocks-xxl-5 blocks-lg-4 blocks-md-3 blocks-sm-2"
+              data-plugin="animateList" data-child=">li">
+              <li ng-repeat = "Product in ProductList">
+                <div class="panel">
+                  <figure class="overlay overlay-hover animation-hover">
+                    <img class="caption-figure overlay-figure" ng-src="{{Product.ProductImage}}">
+                    <figcaption class="overlay-panel overlay-background overlay-fade text-center vertical-align">
+                      <button type="button" class="btn btn-primary btn-outline btn-default project-button" ng-click = "BtnOrderClick(Product)" >Sipariş Ver</button>
+                    </figcaption>
+                  </figure>
+                  <div class="row p-10">
+                    <div class="text-truncate col-4"><h5>{{Product.ProductName}}</h5></div>
+                    <input type="number" ng-model = "Product.TxtQuantity" class="form-control col-4" value="1">
+                    <div class="time float-right col-4"><h5>{{Product.ProductPrice}} ₺</h5></div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </div>
+</div>
+
