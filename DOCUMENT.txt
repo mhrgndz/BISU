@@ -3,3 +3,5 @@
 npm install express
 npm install msnodesqlv8
 npm install node-windows
+
+//config.json içerisinde database bilgileri ve kullanılacak port belirlenmelidir.
