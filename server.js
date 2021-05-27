@@ -44,8 +44,7 @@ app.get('/getCustomerInfo', function (req, res)
         res.end(JSON.stringify(obj));
     });
 })
-
-//CUSTOMER
+//ORDERS
 app.get('/getOrders', function (req, res) 
 {
     let id = Object.keys(req.query)[0];
